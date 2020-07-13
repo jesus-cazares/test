@@ -1,0 +1,57 @@
+
+@import './assets/scss/material.scss';
+
+
+$theme-colors: (
+        "primary": $gold,
+        "secondary": $darkgrey,
+        "success": $success,
+        "danger": $danger,
+        "warning": $warning,
+        "info": $update,
+        "light": $light,
+        "dark": $black
+);
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import '~bootstrap/scss/utilities';
+
+@import '~ngx-toastr/toastr';
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+@import './assets/scss/colors';
+@import './assets/scss/fonts';
+
+@import './assets/scss/overrides.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background-color: #343a40;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $super-light;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $medium-gray;
+  outline: 1px solid $medium;
+}
+
+* {
+  scrollbar-color: $medium $super-light;
+  scrollbar-width: thin;
+}

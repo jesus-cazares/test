@@ -1,0 +1,188 @@
+@import "./colors";
+@import "./fonts";
+
+// Bootstrap
+button:focus,
+button:active:focus,
+button.active:focus {
+  outline: none !important;
+  outline-style: none !important;
+}
+
+// Owl DateRange Picker
+.owl-dt-calendar-table .owl-dt-calendar-cell-selected {
+  color: $super-light !important;
+  background-color: $gold !important;
+}
+
+.owl-dt-container-info .owl-dt-container-info-active {
+  color: $black !important;
+}
+
+.owl-dt-container-buttons {
+  color: $darkgrey !important;
+}
+
+// Angular Material
+.mat-card {
+  border-radius: 0px !important;
+  box-shadow: 0 0 7px 0 rgba(107, 88, 53, 0.08) !important;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/**
+* border radius form components
+**/
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border-radius: 0px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-start {
+  border-radius: 0px !important;
+}
+
+/**
+* Icon aligment
+**/
+.mat-form-field-infix {
+  top: -0.25em;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-prefix,
+.mat-form-field-appearance-outline .mat-form-field-suffix {
+  top: -0.25em !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-label {
+  margin-top: 0em;
+}
+
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+  top: 0.8em;
+}
+
+.mat-dialog-container {
+  overflow: hidden;
+}
+
+.ns-mat-tab-group {
+  .mat-tab-header {
+    background-color: $medium-gray;
+  }
+
+  .mat-ink-bar {
+    background-color: $gold !important;
+    height: 4px;
+  }
+
+  .mat-tab-label {
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+/**
+* button border radius
+**/
+.mat-button,
+.mat-flat-button,
+.mat-icon-button,
+.mat-stroked-button {
+  border-radius: 0px !important;
+}
+
+.mat-checkbox-frame {
+  border-color: $gold;
+}
+
+.menu {
+  &.mat-menu-panel {
+    background: $darkgrey;
+    max-width: 100% !important;
+    max-height: calc(100vh - 19vh) !important;
+
+    .mat-menu-content {
+      border: 1px solid $gold;
+    }
+  }
+}
+
+// Tab
+.mat-tab-body-content {
+  overflow-x: hidden !important;
+}
+
+/* IE10+ CSS styles go here */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  @media all and (min-width: 1200px) {
+    .menu {
+      &.mat-menu-panel {
+        max-width: 100% !important;
+        width: 1000px;
+        max-height: calc(100vh - 19vh) !important;
+      }
+    }
+  }
+
+  @media all and (min-width: 960px) {
+    .menu {
+      &.mat-menu-panel {
+        max-width: 100% !important;
+        width: 950px;
+        max-height: calc(100vh - 19vh) !important;
+      }
+    }
+  }
+}
+
+.menu-dropdown.mat-menu-panel {
+  max-width: 28rem;
+  width: 26rem;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menu-dropdown.mat-menu-panel {
+    max-width: 40rem;
+    width: 39rem;
+  }
+}
+
+/* stepper */
+.mat-step-header {
+  .mat-step-icon {
+    height: 35px;
+    width: 35px;
+
+    .mat-step-icon-content {
+      display: flex;
+      height: 100%;
+      text-align: center;
+
+      .mat-icon {
+        align-self: center;
+        width: 24px;
+      }
+    }
+  }
+
+  .mat-step-icon-selected {
+    background-color: $gold;
+  }
+
+  .mat-step-icon-state-done {
+    background-color: $success;
+  }
+}
+
+.mat-horizontal-stepper-header-container{
+  .mat-stepper-horizontal-line {
+    top: 42px !important;
+  }
+  .mat-horizontal-stepper-header:not(:last-child)::after, .mat-horizontal-stepper-header:not(:first-child)::before{
+    top: 42px !important;
+  }
+}

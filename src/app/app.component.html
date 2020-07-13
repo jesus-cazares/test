@@ -1,0 +1,18 @@
+
+<router-outlet></router-outlet>
+<swal #swalie title="Please update your browser" icon="warning" width="36rem"
+      [heightAuto]="false">
+    <div class="container" *swalPortal="swalTargets.content">
+        <p class="text-justify">
+            To get the best possible experience using our website we recommend that you upgrade to a newer version or other
+            web browser.
+        </p>
+        <div class="d-flex justify-content-between w-100">
+            <a class="text-decoration-none" [href]="browser.link" target="_blank" rel="noopener"
+               *ngFor="let browser of browsers">
+                <img [src]="browser.img" height="78px" width="78px" [alt]="browser.name"/>
+                <div>{{ browser.name }}</div>
+            </a>
+        </div>
+    </div>
+</swal>

@@ -1,0 +1,17 @@
+@import '~src/assets/scss/colors';
+@import '~src/assets/scss/fonts';
+
+@import '~@angular/material/theming';
+@include mat-core();
+$accns-app-primary: mat-palette($ns-grey, 900);
+$accns-app-accent: mat-palette($ns-gold, 700);
+$accns-app-warn: mat-palette($ns-red, 900);
+
+$accns-app-typography: mat-typography-config(
+  $font-family: 'Lato, sans-serif',
+  $headline: mat-typography-level(72px, 28px, 300),
+  $body-1: mat-typography-level(16px, 24px, 500),
+);
+$accns-app-theme: mat-light-theme($accns-app-primary, $accns-app-accent, $accns-app-warn);
+@include angular-material-typography($accns-app-typography);
+@include angular-material-theme($accns-app-theme);

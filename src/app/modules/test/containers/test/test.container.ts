@@ -11,7 +11,7 @@ import * as selectors from '../../store/selectors/selectors';
   styleUrls: ['./test.container.scss']
 })
 export class TestContainerComponent implements OnInit {
-  savedValue$: Observable<string | undefined>
+  savedValue$: Observable<string>
 
   constructor(
     private store: Store<State>

@@ -3,18 +3,18 @@ import { Action, createReducer, on } from '@ngrx/store';
 import * as actions from '../actions/some.actions';
 
 export interface State {
-  var: string | undefined
+  val: string
 };
 
 export const initialState: State = {
-  var: undefined
+  val: 'HI!'
 };
 
 const saveItem = createReducer(
   initialState,
   on(actions.saveItem, (state, props) => ({
     ...state,
-    var: props.var
+    var: props.val
   }))
 );
 

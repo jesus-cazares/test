@@ -1,2 +1,4 @@
-<ng-test></ng-test>
-
+<ng-test
+  (emitValue)="onValueEmitted($event)"
+  [inputVal]="savedValue$ | async"
+></ng-test>

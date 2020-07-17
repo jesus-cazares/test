@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 
 import { State } from '../../store';
 import * as selectors from '../../store/selectors/selectors';
+import { saveItem } from '../../store/actions/some.actions';
+import { NameFood } from '../../components/test/test.component';
 
 @Component({
   selector: 'ng-test-container',
@@ -11,13 +13,17 @@ import * as selectors from '../../store/selectors/selectors';
   styleUrls: ['./test.container.scss']
 })
 export class TestContainerComponent implements OnInit {
-  savedValue$: Observable<string>
+  savedValue$: Observable<NameFood>
 
   constructor(
     private store: Store<State>
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.savedValue$ = this.store.select(selectors.someSelector);
+  }
+
+  onValueEmitted(event: NameFood) {
+    this.store.dispatch(saveItem({ name: event.name, favFood: event.favFood }));
   }
 }

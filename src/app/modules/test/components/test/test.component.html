@@ -1,13 +1,14 @@
 <div class="h-100 d-flex flex-column">
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <mat-label>Name</mat-label>
-          <input matInput placeholder="Ex. Juan" >
-        </mat-form-field>
-      
-        <mat-form-field class="example-full-width">
-          <mat-label>Favorite food</mat-label>
-          <input matInput placeholder="Ex. sushi">
-        </mat-form-field>
-    </form>
+  <form class="example-form" [formGroup]="formGrp" (ngSubmit)="onFormSubmit()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Ex. Juan" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput formControlName="favFood" placeholder="Ex. sushi" />
+    </mat-form-field>
+    <button mat-button type="submit">Submit</button>
+  </form>
 </div>

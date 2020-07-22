@@ -21,7 +21,7 @@ export class TestComponent {
     const food: string = this.testForm.value.food;
     const arr = [];
     for(let i =0; i < name.length; i++) {
-      if (name[i] !== 'a') {
+      if (name[i].toLowerCase() !== 'a') {
         arr.push(name[i]);
       }
     }

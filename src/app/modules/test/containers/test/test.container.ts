@@ -20,4 +20,8 @@ export class TestContainerComponent implements OnInit {
   ngOnInit(): void {
     this.savedValue$ = this.store.select(selectors.someSelector);
   }
+
+  onValueChanges(event: any) {
+    
+  }
 }

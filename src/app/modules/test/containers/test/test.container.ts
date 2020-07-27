@@ -1,3 +1,4 @@
+import { saveItem } from './../../store/actions/some.actions';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
@@ -19,5 +20,9 @@ export class TestContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.savedValue$ = this.store.select(selectors.someSelector);
+  }
+
+  onValueChanges(event: any) {
+    this.store.dispatch(saveItem({...event}));
   }
 }

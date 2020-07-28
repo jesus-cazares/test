@@ -1,20 +1,23 @@
-import { Action, createReducer, on } from '@ngrx/store';
+import { Action, createReducer, on } from "@ngrx/store";
 
-import * as actions from '../actions/some.actions';
+import * as actions from "../actions/some.actions";
 
 export interface State {
-  val: string
-};
+  val: string;
+  val1: string;
+}
 
 export const initialState: State = {
-  val: 'HI!'
+  val: "HI!",
+  val1: "",
 };
 
 const saveItem = createReducer(
   initialState,
   on(actions.saveItem, (state, props) => ({
     ...state,
-    var: props.val
+    var: props.val,
+    var1: props.val1,
   }))
 );
 

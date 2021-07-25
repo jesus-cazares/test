@@ -30,7 +30,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
   ],
-  imports: [],
+  imports: [MatStepperModule],
   exports: [
     CommonModule,
     DragDropModule,
@@ -59,7 +59,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule {}

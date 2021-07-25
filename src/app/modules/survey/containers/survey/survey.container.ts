@@ -6,11 +6,11 @@ import { State } from '../../store';
 import * as selectors from '../../store/selectors/selectors';
 
 @Component({
-  selector: 'ng-test-container',
-  templateUrl: './test.container.html',
-  styleUrls: ['./test.container.scss']
+  selector: 'ng-survey-container',
+  templateUrl: './survey.container.html',
+  styleUrls: ['./survey.container.scss']
 })
-export class TestContainerComponent implements OnInit {
+export class SurveyContainer implements OnInit {
   savedValue$: Observable<string>
 
   constructor(

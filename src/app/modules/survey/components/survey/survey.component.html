@@ -1,0 +1,120 @@
+<div class="h-100 d-flex flex-column">
+  <div class="flex-grow-1 px-3 pt-3">
+    <div *ngIf="!seccion1" class="seccion1">
+
+      <div class="font-title">Sección 1</div>
+      <div class="row">
+        <div class="col">
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con RFC?  
+            </div>
+            <mat-radio-group [(ngModel)]="rfc" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font p2-4">
+              ¿Cuenta con una acta constitutiva?
+            </div>
+            <mat-radio-group [(ngModel)]="acta" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con un representante legal?
+            </div>
+            <mat-radio-group [(ngModel)]="representante" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin seccion 1-->
+
+    <div *ngIf="seccion1" class="seccion2">
+
+      <div class="font-title">Sección 2</div>
+      <div class="row">
+        <div class="col">
+          <div class="p-2"> <!--depende de si la anterior es afirmativa-->
+            <div class="font pb-2">
+              ¿Cuenta el repreantante legal con una acta constitutiva?
+            </div>
+            <mat-radio-group [(ngModel)]="actaRepresentante" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              Sector al que pertenece:
+            </div>
+            <mat-radio-group [(ngModel)]="sector" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="pu">Público</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="pri">Privado</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="so">Social</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="d-flex justify-content-end align-items-end">
+    <button *ngIf="!seccion1" (click)="seccion1=true" [disabled]="!rfc || !acta || !representante" mat-flat-button color="accent">Next</button>
+    <button *ngIf="seccion1" mat-flat-button color="accent">Next</button>
+  </div>
+</div>

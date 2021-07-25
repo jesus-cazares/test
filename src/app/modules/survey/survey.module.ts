@@ -5,22 +5,22 @@ import { StoreModule } from '@ngrx/store';
 
 import { effects, featureKey, reducer } from './store';
 
-import {TestComponent } from './components/test/test.component';
-import {TestContainerComponent } from './containers/test/test.container';
-import {TestRoutingModule } from './test-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { SurveyComponent } from './components/survey/survey.component';
+import { SurveyContainer } from './containers/survey/survey.container';
+import { SurveyRoutingModule } from './survey-routing.module';
 
 @NgModule({
   declarations: [
-   TestComponent,
-   TestContainerComponent
+   SurveyComponent,
+   SurveyContainer
   ],
   imports: [
     CommonModule,
-    TestRoutingModule,
+    SurveyRoutingModule,
     SharedModule,
     EffectsModule.forFeature(effects),
     StoreModule.forFeature(featureKey, reducer)
   ]
 })
-export class TestModule { }
+export class SurveyModule { }

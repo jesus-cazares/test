@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TestContainerComponent } from './containers/test/test.container';
+import { SurveyContainer } from './containers/survey/survey.container';
 
 const routes: Routes = [
   {
     path: '',
-    component: TestContainerComponent, pathMatch: 'full'
+    component: SurveyContainer, pathMatch: 'full'
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TestRoutingModule { }
+export class SurveyRoutingModule { }

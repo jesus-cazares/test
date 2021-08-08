@@ -108,9 +108,1000 @@
               </div>
             </mat-radio-group>    
           </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              El establecimiento está en un inmueble:
+            </div>
+            <mat-radio-group [(ngModel)]="tipoInmueble" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="unico">Único</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="conjunto">Forma parte de un conjunto</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              La construcción, según el RCDF, pertenece a construcción tipo:
+            </div>
+            <mat-radio-group [(ngModel)]="tipoConstruccion" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="a">A</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="b">B</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="c">C</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuántos niveles totales tienen su negocio?
+            </div>
+            <mat-radio-group [(ngModel)]="niveles" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="unoacinco">De 1 a 5</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="seisadiez">De 6 a 10</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="onceomas">De 11 o mas</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuál es su población fija?
+            </div>
+            <mat-radio-group [(ngModel)]="poblacion" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="unoacincuenta">De 1 a 50</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="cincuentayunoacientocincuenta">De 51 a 150</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="cientocincuentayunoadocientos">De 151 a 200</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="masdedocientos">Más de 200</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuántos visitantes reciben al día?
+            </div>
+            <mat-radio-group [(ngModel)]="visitantes" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="unoacincuenta">De 1 a 50</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="cincuentayunoacientocincuenta">De 51 a 150</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="cientocincuentayunoadocientos">De 151 a 200</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="masdedocientos">Más de 200</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Dentro de sus trabajadores cuenta con población con alguna discapacidad?
+            </div>
+            <mat-radio-group [(ngModel)]="discapacidad" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+          
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿En sus visitantes hay infantes o lactantes?
+            </div>
+            <mat-radio-group [(ngModel)]="ninos" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              Sus instalaciones estás hechas por sistema constructivo de:
+            </div>
+            <mat-radio-group [(ngModel)]="constructivo" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="muros">Muros de carga</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="reticular">Reticular</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="prefabricados">Prefabricados</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Se han hecho modificaciones en la construcción después de terminarlas?
+            </div>
+            <mat-radio-group [(ngModel)]="modificaciones" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con instalaciones especiales (CCTV, vs incendios, detección, sísmica, voceo, etc.)?
+            </div>
+            <mat-radio-group [(ngModel)]="especiales" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con elevadores (personas o carga)?
+            </div>
+            <mat-radio-group [(ngModel)]="elevadores" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuentan con recipientes a presión, criogénicos o generadores de vapor?
+            </div>
+            <mat-radio-group [(ngModel)]="recipientes" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+
         </div>
       </div>
     </div>
+    <!--Fin de seccion 2-->
+
+    <div *ngIf="seccion1" class="seccion3">
+
+      <div class="font-title">Sección 3</div>
+      <div class="row">
+        <div class="col">
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Tienen un punto de reunión?  
+            </div>
+            <mat-radio-group [(ngModel)]="puntoReunion" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font p2-4">
+              ¿Cuenta con análisis de riesgo?
+            </div>
+            <mat-radio-group [(ngModel)]="analisisRiesgo" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Ha realizado simulacros en el último año?
+            </div>
+            <mat-radio-group [(ngModel)]="simulacros" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con un estudio de riesgos?
+            </div>
+            <mat-radio-group [(ngModel)]="estudioRiesgos" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Tiene planes de contingencia?
+            </div>
+            <mat-radio-group [(ngModel)]="contingencia" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Su empresa cuanta con un Plan de Continuidad de Operaciones?
+            </div>
+            <mat-radio-group [(ngModel)]="planContinudad" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con carta de corresponsabilidad de un tercer acreditado?
+            </div>
+            <mat-radio-group [(ngModel)]="corresponsable" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Ha firmado una carta de corresponsabilidad el dueño o el representante legal?
+            </div>
+            <mat-radio-group [(ngModel)]="corresponsabilidad" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿La empresa tiene póliza de seguro de responsabilidad civil vigente?
+            </div>
+            <mat-radio-group [(ngModel)]="polizaSeguro" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Sus instalaciones cuentan con un Dictamen Estructural?
+            </div>
+            <mat-radio-group [(ngModel)]="estructural" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con un Visto Bueno de Seguridad y Operación vigente?
+            </div>
+            <mat-radio-group [(ngModel)]="vobo" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿El dueño o el representante legal a firmado una carta de No modificación o cambios estructurales?
+            </div>
+            <mat-radio-group [(ngModel)]="noModificacion" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con instalación de gas, natural o LP, con dictamen por unidad verificadora?
+            </div>
+            <mat-radio-group [(ngModel)]="gas" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿El dueño o el representante legal a firmado una carta por el equipo de alertamiento y del equipo de prevención y combate contra incendios?
+            </div>
+            <mat-radio-group [(ngModel)]="nomDos" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿El dueño o el representante legal a firmado una carta por las características del equipo de primeros auxilios firmado por el obligado?
+            </div>
+            <mat-radio-group [(ngModel)]="botiquin" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con sistema de alertamiento sísmico?
+            </div>
+            <mat-radio-group [(ngModel)]="alertamiento" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Su sistema de alertemiento sísmico tiene carta responsiva o de garantía por el proveedor?
+            </div>
+            <mat-radio-group [(ngModel)]="cartaAlertamiento" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          
+
+
+        </div>
+      </div>
+    </div>
+    <!--Fin seccion 3-->
+
+
+
+    <div *ngIf="seccion1" class="seccion4">
+
+      <div class="font-title">Sección 4</div>
+      <div class="row">
+        <div class="col">
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿En su empresa existe una brigada de emergencia, constituida en acta?
+            </div>
+            <mat-radio-group [(ngModel)]="brigadaemerg" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿La brigada de emergencia ha sido capacitada, en el último año, o cuenta con un plan de capacitación anual?
+            </div>
+            <mat-radio-group [(ngModel)]="capacitacion" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con un programa de simulacros anual?
+            </div>
+            <mat-radio-group [(ngModel)]="simulacro" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Existe un plan de mantenimiento para las instalaciones?
+            </div>
+            <mat-radio-group [(ngModel)]="mantenimiento" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Sus extintores cuentan con su carta responsiva emitida por el proveedor?
+            </div>
+            <mat-radio-group [(ngModel)]="extintores" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos arquitectónicos actualizados?
+            </div>
+            <mat-radio-group [(ngModel)]="arquitectonicos" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con ubicación del equipamiento de atención a grupos vulnerables?
+            </div>
+            <mat-radio-group [(ngModel)]="vulnerables" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con ubicación del equipo de primeros auxilios?
+            </div>
+            <mat-radio-group [(ngModel)]="planoBotiquines" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+          
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con distribución de brigadistas?
+            </div>
+            <mat-radio-group [(ngModel)]="planoBrigadistas" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con ubicación de equipos de alerta, prevención y combate contra incendios?
+            </div>
+            <mat-radio-group [(ngModel)]="planoNomCeroDos" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con localización de los riesgos eléctricos?
+            </div>
+            <mat-radio-group [(ngModel)]="riskElectricos" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con las rutas de evacuación?
+            </div>
+            <mat-radio-group [(ngModel)]="planoEvacuacion" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con las salidas y escaleras de emergencia?
+            </div>
+            <mat-radio-group [(ngModel)]="planoEscaleras" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos con ubicación del alertamiento sísmico?
+            </div>
+            <mat-radio-group [(ngModel)]="planoAlertamiento" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos para zonas de menor riesgo?
+            </div>
+            <mat-radio-group [(ngModel)]="planoMenorrisk" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Cuenta con planos para zonas de riesgo?
+            </div>
+            <mat-radio-group [(ngModel)]="planoRisk" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">Si</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">No</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button>
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!--Fin de seccion 4-->
+
+
+    <div *ngIf="seccion1" class="seccion5">
+
+      <div class="font-title">Sección 5</div>
+      <div class="row">
+        <div class="col">
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Confía en la actuación de la brigada de emergencia?
+            </div>
+            <mat-radio-group [(ngModel)]="confiaBrigada" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Su tercer acreditado le genera confianza para llevar su programa de protección civil?
+            </div>
+            <mat-radio-group [(ngModel)]="confiaAcreditado" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              ¿Considera que cuenta con los recursos suficientes para atender una emergencia?
+            </div>
+            <mat-radio-group [(ngModel)]="recursosEmergencia" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              En caso de contingencia, ¿considera que están preparados?
+            </div>
+            <mat-radio-group [(ngModel)]="preparados" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+          <div class="p-2">
+            <div class="font pb-2">
+              En caso de siniestro, ¿su plan de continuidad lo mantendrá en el mercado?
+            </div>
+            <mat-radio-group [(ngModel)]="continuidadMercado" aria-label="Select an option">
+              <div class="row">
+                <div class="col-2">
+                  <mat-radio-button value="si">SI</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="no">NO</mat-radio-button>
+                </div>
+                <div class="col-2">
+                  <mat-radio-button value="na">N/A</mat-radio-button> 
+                </div>
+              </div>
+            </mat-radio-group>    
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!--Fin de seccion 2-->
+
+    
 
   </div>
   <div class="d-flex justify-content-end align-items-end">

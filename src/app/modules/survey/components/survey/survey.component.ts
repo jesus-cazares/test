@@ -70,5 +70,23 @@ export class SurveyComponent {
 
 
 
-  seccion1= false;
+  secciones: { [index: string]: boolean } = {
+    seccion1: true,
+    seccion2: false,
+    seccion3: false,
+    seccion4: false,
+    seccion5: false,
+    seccion6: false,
+    seccion7: false
+  };
+
+  enableSection(section: number): void {
+    Object.keys(this.secciones).forEach((key: string, index: number) => {
+      this.secciones[key] = section === (index + 1);
+    });
+  }
+
+  submit(): void {
+    
+  }
 }

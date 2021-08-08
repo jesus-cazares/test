@@ -1,6 +1,6 @@
 <div class="h-100 d-flex flex-column">
   <div class="flex-grow-1 px-3 pt-3">
-    <div *ngIf="!seccion1" class="seccion1">
+    <div *ngIf="secciones.seccion1" class="seccion1">
 
       <div class="font-title">Sección 1</div>
       <div class="row">
@@ -66,7 +66,7 @@
     </div>
     <!--Fin seccion 1-->
 
-    <div *ngIf="seccion1" class="seccion2">
+    <div *ngIf="secciones.seccion2" class="seccion2">
 
       <div class="font-title">Sección 2</div>
       <div class="row">
@@ -340,7 +340,7 @@
     </div>
     <!--Fin de seccion 2-->
 
-    <div *ngIf="seccion1" class="seccion3">
+    <div *ngIf="secciones.seccion3" class="seccion3">
 
       <div class="font-title">Sección 3</div>
       <div class="row">
@@ -678,7 +678,7 @@
 
 
 
-    <div *ngIf="seccion1" class="seccion4">
+    <div *ngIf="secciones.seccion4" class="seccion4">
 
       <div class="font-title">Sección 4</div>
       <div class="row">
@@ -995,7 +995,7 @@
     <!--Fin de seccion 4-->
 
 
-    <div *ngIf="seccion1" class="seccion5">
+    <div *ngIf="secciones.seccion5" class="seccion5">
 
       <div class="font-title">Sección 5</div>
       <div class="row">
@@ -1101,11 +1101,52 @@
     </div>
     <!--Fin de seccion 2-->
 
+    <div *ngIf="secciones.seccion6" class="seccion5">
+
+      <div class="font-title">Sección 6</div>
+      <div class="row">
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="secciones.seccion7" class="seccion5">
+
+      <div class="font-title">FIN</div>
+      <div class="row">
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
     
 
   </div>
-  <div class="d-flex justify-content-end align-items-end">
-    <button *ngIf="!seccion1" (click)="seccion1=true" [disabled]="!rfc || !acta || !representante" mat-flat-button color="accent">Next</button>
-    <button *ngIf="seccion1" mat-flat-button color="accent">Next</button>
+  <div *ngIf="secciones.seccion1" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(2)" [disabled]="!rfc || !acta || !representante" mat-flat-button color="accent">Next</button>
+  </div>
+  <div *ngIf="secciones.seccion2" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(1)" mat-flat-button color="accent">Back</button>
+    <button (click)="enableSection(3)" class="ml-2" [disabled]="false" mat-flat-button color="accent">Next</button>
+  </div>
+  <div *ngIf="secciones.seccion3" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(2)" mat-flat-button color="accent">Back</button>
+    <button (click)="enableSection(4)" class="ml-2" [disabled]="false" mat-flat-button color="accent">Next</button>
+  </div>
+  <div *ngIf="secciones.seccion4" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(3)" mat-flat-button color="accent">Back</button>
+    <button (click)="enableSection(5)" class="ml-2" [disabled]="false" mat-flat-button color="accent">Next</button>
+  </div>
+  <div *ngIf="secciones.seccion5" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(4)" mat-flat-button color="accent">Back</button>
+    <button (click)="enableSection(6)" class="ml-2" [disabled]="false" mat-flat-button color="accent">Next</button>
+  </div>
+  <div *ngIf="secciones.seccion6" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(5)" mat-flat-button color="accent">Back</button>
+    <button (click)="enableSection(7)" class="ml-2" [disabled]="false" mat-flat-button color="accent">Next</button>
+  </div>
+  <div *ngIf="secciones.seccion7" class="d-flex justify-content-end align-items-end">
+    <button (click)="enableSection(6)" mat-flat-button color="accent">Back</button>
+    <button (click)="submit()" class="ml-2" [disabled]="false" mat-flat-button color="accent">Submit</button>
   </div>
 </div>
